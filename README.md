@@ -19,3 +19,6 @@ Navigate to Google Cloud Console and select the project you want to monitor and 
 
 If the subscription does not exists previously, navigate to **Topics** section and create a topic. After creating the Topic, navigate to **Subscriptions** section and create a new subscription by selecting the specific topic.
 
+`Workload Identity Pool ID` : To get this ID, you must run the terraform script for DNS in gshell of Google Cloud Platform. You can find the script files in the home page of the connector or find them in the steps provided below.
+### Steps to execute Terrraform scripts
+1. [Click here]() to access the terraform scripts
