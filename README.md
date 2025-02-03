@@ -15,7 +15,7 @@ Navigate to Google Cloud Console and select the project you want to monitor and 
 
 `Project ID` and `Project Number` : You can find these details in the home page of the project.
 
-`GCP subscription name` : If the subscription already exists, you can find this field in the **Pub/Sub** section.
+`GCP subscription name` : If the subscription already exists, search for **Pub/Sub** section in the search bar and navigate to the respective section where you can find the above mentioned details.
 
 If the subscription does not exists previously, navigate to **Topics** section and create a topic. After creating the Topic, navigate to **Subscriptions** section and create a new subscription by selecting the specific topic.
 
