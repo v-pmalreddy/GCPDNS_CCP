@@ -19,7 +19,29 @@ Navigate to Google Cloud Console and select the project you want to monitor and 
 
 If the subscription does not exists previously, navigate to **Topics** section and create a topic. After creating the Topic, navigate to **Subscriptions** section and create a new subscription by selecting the specific topic.
 
-`Workload Identity Pool ID` : To get this ID, you must run the terraform script for DNS in gshell of Google Cloud Platform. You can find the script files in the home page of the connector or find them in the steps provided below.
+`Workload identity pool ID` and `Workload identity provider ID` : To get this ID, you must run the terraform script for DNS in gshell of Google Cloud Platform. You can find the script files in the home page of the connector or find them in the steps provided below.
 ### Steps to execute Terrraform scripts
 1. [Click here](https://github.com/v-pmalreddy/GCPDNS_CCP/tree/main/GCPDNSLogsSetup) to access the terraform scripts.
-2. 
+2. Launch the gcloud shell and create a directory using **mkdir <dir_name>** and navigate to the directory using **cd<dir_name>**.
+3. Copy the raw link of the Terraform script and get the content of the file into a shell using the following command:
+   ```
+   wget <link of the file> -O <filename.tf>
+   ```
+4. Now run the following commands
+   ```
+   terraform init
+   ```
+   ```
+   terraform plan
+   ```
+   ```
+   terraform apply
+   ```
+5. After successfully executing the above mentioned commands, the workload Identity Pool ID and Provider ID is created.
+
+Now you can find the ID's related to Workload identity pool and provider in the Workload Identity Ferderation.
+
+`Service account email` : Navigate to **Service accounts** section and use the relevant service account for authentication.
+
+After filling all the details accurately click on `Connect`, then you will be able to connect the Google Cloud Platform DNS connector to monitor DNS logs.
+   
