@@ -1,10 +1,9 @@
 # Integrating Google Cloud Platform DNS in Microsoft Sentinel
 ## Table of contents
 - [Introduction](#intro)
-- [Step 1 Install The Connector](#step1)
-- [Step 2 Adding the new Collector](#step2)
-- [Step 3 Fill the required details](#step3)
-- [Terraform Scripts](#terraform)
+- [Steps to install The Connector](#step1)
+- [Steps to add the new Collector](#step2)
+- [Steps to execute Terraform Scripts](#terraform)
 
 
 <a name="intro">
@@ -15,22 +14,18 @@ The Google Cloud Platform DNS Codeless Connector for Microsoft Sentinel enables 
 
 <a name="step1">
    
-## Step - 1 Install the connector
+## Steps to install the connector
 - Install the **Google Cloud Platform DNS** connector from `Content Hub`
 
 <a name="step2">
 
-## Step - 2 Adding the new Collector
+## Steps to add the new Collector
 - After installing the connector, navigate to `Data Connectors` and select on the **Google Cloud Platform DNS** Connector.
 
 - A new window pops up in the bottom, and click on `Open Connector Page`. 
 
 - Now, click on `Add new collector` button.
-
-<a name="step3">
-
-## Step - 3 Fill the required details
-Navigate to Google Cloud Console and select the project you want to monitor and fetch the following fields
+- Navigate to Google Cloud Console and select the project you want to monitor and fetch the following resources
 
 - `Project ID` and `Project Number` : You can find these details in the home page of the project.
 
