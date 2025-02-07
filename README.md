@@ -1,4 +1,4 @@
-# Integrating Google Cloud Platform DNS in Microsoft Sentinel
+# Integrating Google Cloud Platform DNS into Microsoft Sentinel
 ## Table of contents
 - [Introduction](#intro)
 - [Steps to install The Connector](#step1)
