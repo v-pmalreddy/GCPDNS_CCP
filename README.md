@@ -2,7 +2,8 @@
 ## Table of contents
 - [Introduction](#intro)
 - [Prerequisites](#step2)
-- [Steps to execute Terraform Scripts](#terraform)
+- [Steps to execute Terraform Scripts for log setup](#log)
+- [Steps to execute Terraform Scripts for Authentication setup](#auth)
 
 
 <a name="intro">
@@ -26,10 +27,10 @@ To generate the above resources, you must execute the following terraform script
 - Log Setup file
 - Authentication Setup file
 
-<a name="terraform">
+<a name="log">
 
 ## Steps to execute Terrraform scripts for Log Setup
-[Click here](https://github.com/v-pmalreddy/GCPDNS_CCP/tree/main/GCPDNSLogsSetup) to access the terraform script for Log Setup.
+To access the terraform script for Log Setup [Click here](https://github.com/v-pmalreddy/GCPDNS_CCP/tree/main/GCPDNSLogsSetup).
 - After accessing the log setup file, edit the project id as per your project.
 - Execute the below mentioned commands after editing the script.
 - Launch the cloud shell and create a directory
@@ -59,9 +60,12 @@ To generate the above resources, you must execute the following terraform script
    terraform apply
    ```
 - After successfully executing the Log Setup file, `topic name`, `subscription name` is generated in the GCP Project. Save those details for future reference.
+
+<a name="auth">
+  
 ## Steps to execute Terraform script for Authentication setup
 - If the Authentication setup file is previously executed in the project, there is no need to execute the Authentication setup file again. You can use the existing `Workload Identity Pool ID` and `Workload Identity Provider ID`.
 - If these fields are not generated previosuly, execute the Authentication Setup file with the same commands mentioned above.
-- [Click Here](https://github.com/Azure/Azure-Sentinel/tree/master/DataConnectors/GCP/Terraform/sentinel_resources_creation/GCPInitialAuthenticationSetup) to access the Authentication Setup file.
+- To access the Authentication Setup file [Click Here](https://github.com/Azure/Azure-Sentinel/tree/master/DataConnectors/GCP/Terraform/sentinel_resources_creation/GCPInitialAuthenticationSetup).
 - After executing the authentication setup file, `Workload Identity Pool ID` and `Workload Identity Provider ID` are generated in the project.
 
