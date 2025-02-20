@@ -48,7 +48,7 @@ resource "google_logging_project_sink" "sentinel-sink" {
   count = var.organization-id == "" ? 1 : 0
   name = "DNS-logs-sentinel-sink"
   destination = "pubsub.googleapis.com/projects/${data.google_project.project.project_id}/topics/${var.topic-name}"
-  depends_on = [google_pubsub_topic.sentinel-topic]
+  depends_on = [google_pubsub_topic.sentineldns-topic]
 
   filter = "protoPayload.serviceName=dns.googleapis.com OR resource.type=dns_query"
   unique_writer_identity = true
