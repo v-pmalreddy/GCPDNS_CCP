@@ -14,6 +14,7 @@ The Google Cloud Platform DNS Codeless Connector for Microsoft Sentinel enables 
 <a name="step2">
 
 ## Setting up Logs
+### Prerequisites
 The below mentioned resources are required to connect GCP with Sentinel.
 - Project ID
 - Project Number
