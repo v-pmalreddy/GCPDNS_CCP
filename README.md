@@ -23,7 +23,7 @@ The below mentioned resources are required to connect GCP with Sentinel.
 - Service Account
 - Workload Identity Provider ID
 
-To generate the above resources, you must execute the following terraform script.
+To generate the above resources, you must execute the following terraform scripts.
 - Log Setup file
 - Authentication Setup file
 
