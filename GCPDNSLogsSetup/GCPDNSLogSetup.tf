@@ -40,7 +40,7 @@ resource "google_pubsub_subscription" "sentinel-subscription" {
   project = data.google_project.project.project_id
   name  = "sentinel-subscription-DNSlogs"
   topic = var.topic-name
-  depends_on = [google_pubsub_topic.sentinel-topic]
+  depends_on = [google_pubsub_topic.sentineldns-topic]
 }
 
 resource "google_logging_project_sink" "sentinel-sink" {
