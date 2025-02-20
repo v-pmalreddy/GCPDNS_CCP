@@ -32,8 +32,9 @@ To generate the above resources, you must execute the following terraform script
 ## Steps to execute Terrraform scripts for Log Setup
 To access the terraform script for Log Setup [Click here](https://github.com/v-pmalreddy/GCPDNS_CCP/tree/main/GCPDNSLogsSetup).
 - After accessing the log setup file, edit the project id as per your project.
-- Execute the below mentioned commands after editing the script.
-- Launch the cloud shell from the top navigation bar and create a directory
+- Launch the cloud shell in Google Cloud Console.
+- Execute the below mentioned commands.
+- create a directory
   ```
   mkdir <dir_name>
   ```
