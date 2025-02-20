@@ -42,7 +42,7 @@ To access the terraform script for Log Setup [Click here](https://github.com/v-p
   ```
   cd <dir_name>
   ```
-- Copy the raw link of the Terraform script and get the content of the file into a shell using the following command:
+- Copy the github raw link of the Terraform script and get the content of the file into a shell using the following command:
    ```
    wget <raw link of the file> -O <filename.tf>
    ```
