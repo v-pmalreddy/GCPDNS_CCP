@@ -13,8 +13,7 @@ The Google Cloud Platform DNS Codeless Connector for Microsoft Sentinel enables 
 
 <a name="step2">
 
-## Setting up Logs
-### Prerequisites
+## Prerequisites
 The below mentioned resources are required to connect GCP with Sentinel.
 - Project ID
 - Project Number
@@ -22,6 +21,7 @@ The below mentioned resources are required to connect GCP with Sentinel.
 - Workload Identity Pool ID
 - Service Account
 - Workload Identity Provider ID
+To generate the above resources, you must execute two terraform scripts.
 
 <a name="terraform">
 
@@ -56,6 +56,7 @@ The below mentioned resources are required to connect GCP with Sentinel.
    terraform apply
    ```
 - After successfully executing the Log Setup file, `topic name`, `subscription name` is generated in the GCP Project. Save those details for future reference.
+## Steps to execute Terraform script for Authentication setup
 - If the Authentication setup file is previously executed in the project, there is no need to execute the Authentication setup file again. You can use the existing `Workload Identity Pool ID` and `Workload Identity Provider ID`.
 - If these fields are not generated previosuly, execute the Authentication Setup file with the same commands mentioned above.
 - [Click Here](https://github.com/Azure/Azure-Sentinel/tree/master/DataConnectors/GCP/Terraform/sentinel_resources_creation/GCPInitialAuthenticationSetup) to access the Authentication Setup file.
