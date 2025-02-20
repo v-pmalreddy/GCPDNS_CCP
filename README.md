@@ -24,8 +24,12 @@ The below mentioned resources are required to connect GCP with Sentinel.
 - Workload Identity Provider ID
 
 To generate the above resources, you must execute the following terraform scripts.
-- Log Setup file
-- Authentication Setup file
+
+1. Set up log collection to Microsoft Sentinel from GCP using the following resources
+   - Subscription Name 
+4. Set up Microsft Sentinel Aunthentication in GCP using the following resources
+   - Workload Identity Pool ID
+   - Workload Identity Provider ID
 
 <a name="log">
 
