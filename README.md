@@ -46,17 +46,15 @@ To access the terraform script for Log Setup [Click here](https://github.com/v-p
    ```
    wget <raw link of the file> -O <filename.tf>
    ```
-- Now run the following commands
-
-   Initializes your terraform working directory, downloads provider plugins, and configures the backend for state storage.
+- Initializes your terraform working directory, downloads provider plugins, and configures the backend for state storage.
    ```
    terraform init
    ```
-   Creates an execution plan to show what actions terraform will take to achieve the desired state of your infrastructure.
+- Creates an execution plan to show what actions terraform will take to achieve the desired state of your infrastructure.
    ```
    terraform plan
    ```
-   Executes the actions proposed in the Terraform plan to create, update, or destroy resources in your infrastructure.
+- Executes the actions proposed in the Terraform plan to create, update, or destroy resources in your infrastructure.
    ```
    terraform apply
    ```
@@ -65,7 +63,7 @@ To access the terraform script for Log Setup [Click here](https://github.com/v-p
 <a name="auth">
   
 ## Steps to execute Terraform script for Authentication setup
-- If the Authentication setup file is previously executed in the project, there is no need to execute the Authentication setup file again. You can use the existing `Workload Identity Pool ID` and `Workload Identity Provider ID`.
+- If the Authentication setup file is previously executed in the project, there is no need to execute the Authentication setup file again. You can use the existing `Workload Identity Pool ID` and `Workload Identity Provider ID` for authentication  purpose.
 - If these fields are not generated previosuly, execute the Authentication Setup file with the same commands mentioned above.
 - To access the Authentication Setup file [Click Here](https://github.com/Azure/Azure-Sentinel/tree/master/DataConnectors/GCP/Terraform/sentinel_resources_creation/GCPInitialAuthenticationSetup).
 - After executing the authentication setup file, `Workload Identity Pool ID` and `Workload Identity Provider ID` are generated in the project.
