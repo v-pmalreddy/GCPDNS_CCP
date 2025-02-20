@@ -1,7 +1,7 @@
 # Integrating Google Cloud Platform DNS into Microsoft Sentinel
 ## Table of contents
 - [Introduction](#intro)
-- [Setting up Logs](#step2)
+- [Prerequisites](#step2)
 - [Steps to execute Terraform Scripts](#terraform)
 
 
@@ -22,7 +22,9 @@ The below mentioned resources are required to connect GCP with Sentinel.
 - Service Account
 - Workload Identity Provider ID
 
-To generate the above resources, you must execute two terraform scripts.
+To generate the above resources, you must execute the following terraform script.
+- Log Setup file
+- Authentication Setup file
 
 <a name="terraform">
 
